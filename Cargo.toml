@@ -1,5 +1,5 @@
 [package]
-name = "useless_project_temp"
+name = "gedic"
 version = "0.1.0"
 edition = "2024"
 
