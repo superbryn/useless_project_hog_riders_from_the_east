@@ -67,36 +67,37 @@ For Software:
 # Screenshots
 <img width="2556" height="372" alt="Successful compilation in terminal showing 'Sambhavam set aayi kdaave!' and execution output" src="https://media.discordapp.net/attachments/1428067931660484782/1545940206757224569/Screenshot_2026-09-06_at_4.38.40_AM.png?ex=6a9df883&is=6a9ca703&hm=6566e84fd9147f6f2ae8d8a3836472590d38fb3a7dafcfa8447673909f4b10c8&=&format=webp&quality=lossless&width=2556&height=372" /> Successful compilation in terminal showing "Sambhavam set aayi kdaave!" and execution output
 
+<img width="2528" height="412" alt="Intentional missing semicolon triggering the Thrissur slang error '[SCENE] Semicolon evideda gediye?'" src="https://media.discordapp.net/attachments/1428067931660484782/1545940207377973349/Screenshot_2026-09-06_at_4.40.51_AM.png?ex=6a9df883&is=6a9ca703&hm=195070c95e76a435ad5b21523f8e72c5c94838d3a462a4c900736fd80a95f88f&=&format=webp&quality=lossless&width=2528&height=412" />Intentional missing semicolon triggering the Thrissur slang error '[SCENE] Semicolon evideda gediye?
 
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="2720" height="896" alt="Side-by-side view of a .gedi source file next to standard C++ to show syntax comparison" src="https://media.discordapp.net/attachments/1428067931660484782/1545940207751405679/Screenshot_2026-09-06_at_4.48.22_AM.png?ex=6a9df883&is=6a9ca703&hm=dce47c275c4557d1f45e0c24f1ae2939492f4331998d558cd13340803ddce7be&=&format=webp&quality=lossless&width=2720&height=896" />ide-by-side view of a .gedi source file next to standard C++ to show syntax comparison
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+```
++---------------------+
+|     source.gedi     |  (Gedi C++ source code)
++---------------------+
+           |
+           v
++---------------------+
+|     gedic (Rust)    |  - Tokenize via Logos
+|                     |  - Map slang tokens to C++ syntax
++---------------------+
+           |
+           v (stdin pipe: in-memory, no temp files on disk)
++---------------------+
+|       clang++       |
++---------------------+
+      /         \
+     /           \
+[Success]      [Failure]
+   |                |
+   v                v
+Play Chenda       Play Elephant Scream
+Melam SFX         + Naadan Error Diagnostics
+   |
+   v
+Native Executable (./a.out)*
+```
 
 ### Project Demo
 # Video
