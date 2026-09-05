@@ -13,31 +13,34 @@
 - Member 2: Neeraj Praleep - SCMS School of Engineering and Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+Gedi C++ (gedic) is a lightweight, esoteric C++ transpiler written in Rust that swaps standard syntax with authentic Malayalam and Thrissur slang. It pipes transpiled code directly into Clang via memory without creating messy temporary files, delivers custom Naadan compiler diagnostics on syntax failures, and features baked-in audio that blasts an elephant trumpet on compile errors and chenda melam on a successful build.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Modern systems programming in C++ is plagued by clinical, emotionless keywords and foreign compiler diagnostics that fail to convey the sheer existential crisis of a missing semicolon. Gedi C++ solves the chronic shortage of authentic regional drama in low-level engineering by replacing sterile syntax with pure Naadan expressions, providing localized emotional closure through real-time Thrissur slang diagnostics, and holding developers audibly accountable via elephant screams on failure and celebratory chenda melam on success.  
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Pure Naadan Lexicon: Stripping away corporate std:: jargon and replacing it with battlefield-tested slang—pindam for void, chillara for floats, and paray_shavi for printing to console.  
+
+In-Memory Pipe Sorcery: Built entirely in Rust to stream transpiled C++ code straight through Clang's stdin via process memory—because writing intermediate .cpp files to your disk is lame behavior.  
+
+Aggressive Local Diagnostics: Intercepting cryptic compiler errors and translating them into unapologetic callouts, from "Semicolon evideda gediye?" to full-blown confusion warnings.  
+
+Bespoke Binaural Reinforcement: Baking raw MP3 byte streams straight into the compiled binary so every syntax blunder triggers a traumatizing elephant trumpet, while a clean build drops an instant, glorious burst of chenda melam. 
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- Languages used: Rust, C++, Gedi C++- [Frameworks used]
+- None
+- logos (high-performance lexer and token scanning), rodio (cross-platform audio playback engine with MP3 decoding)
+- Tools used: Cargo, Clang++
 
 ### Implementation
-For Software:
 # Installation
-[commands]
+```zsh
+git clone https://github.com/your-username/gedic.git
+cd gedic```
 
 # Run
 [commands]
