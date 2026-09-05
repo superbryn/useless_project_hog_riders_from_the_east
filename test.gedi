@@ -1,0 +1,12 @@
+poornam pradhanam() {
+    charad peeru = "Gedi";
+    chillara paisa = 100.50;
+
+    igane (paisa > 50.0) {
+        paray_gedi << peeru << " set aanu!" << theernnu;
+    } allegil {
+        paray_gedi << "Scene down!" << theernnu;
+    }
+
+    inna_pidicho 0;
+}
