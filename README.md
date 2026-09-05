@@ -59,12 +59,13 @@ gedic sample.gedi -o my_gedi_app
 ./my_gedi_app
 ```
 
+| Note: Make sure your speaker volume is turned up to hear the build sound effects.
+
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+<img width="2556" height="372" alt="dih" src="https://media.discordapp.net/attachments/1428067931660484782/1545940206757224569/Screenshot_2026-09-06_at_4.38.40_AM.png?ex=6a9df883&is=6a9ca703&hm=6566e84fd9147f6f2ae8d8a3836472590d38fb3a7dafcfa8447673909f4b10c8&=&format=webp&quality=lossless&width=2556&height=372" />
 
 ![Screenshot2](Add screenshot 2 here with proper name)
 *Add caption explaining what this shows*
