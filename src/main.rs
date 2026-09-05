@@ -5,11 +5,6 @@ use std::fs;
 use std::io::{Cursor, Write};
 use std::process::{Command, Stdio};
 
-// ==========================================
-// 🔊 SOUND EFFECTS (EMBEDDED INSIDE BINARY)
-// ==========================================
-// The audio files are baked directly into the compiled executable.
-// No loose .wav files need to travel with your binary.
 static CHENDA_MELAM: &[u8] = include_bytes!("../assets/chenda.mp3");
 static AANA_ALARCHA: &[u8] = include_bytes!("../assets/elephant.mp3");
 
@@ -36,9 +31,6 @@ fn play_sfx(audio_data: &'static [u8]) {
     let _ = handle.join();
 }
 
-// ==========================================
-// 🧠 LEXER & TOKEN DEFINITIONS
-// ==========================================
 #[derive(Logos, Debug, PartialEq)]
 enum RawToken<'a> {
     #[regex(r#""([^"\\]|\\.)*""#)]
@@ -147,9 +139,8 @@ fn transpile(source: &str) -> String {
     out
 }
 
-// ==========================================
-// 💥 GEDI ERROR PARSER
-// ==========================================
+
+// GEDI ERROR PARSER
 fn gedi_diagnostic(raw_err: &str) -> String {
     let mut transformed = Vec::new();
 
@@ -157,30 +148,27 @@ fn gedi_diagnostic(raw_err: &str) -> String {
         let clean = line.replace("<stdin>:", "Line ");
 
         if clean.contains("expected ';'") {
-            transformed.push("💀 [SCENE] Semicolon evideyaadey? Veettil ninnu idaan marannu poyo?".to_string());
+            transformed.push("[SCENE] Semicolon evideda gediye? Veettinnu idaan marannu poya?".to_string());
         } else if clean.contains("use of undeclared identifier") {
-            transformed.push("🤨 [AARA ITH] Angane oru saadhanathe njan jeevithathil kandittilla.".to_string());
+            transformed.push("[AARA ITH] Angane oru saadhanathe njan jeevithathil kandittilla.".to_string());
         } else if clean.contains("expected '}'") || clean.contains("expected ')'") {
-            transformed.push("🚪 [KOODARAM] Bracket thurannittu engotta poyi? Moothett varumo ath?".to_string());
+            transformed.push("[KOODARAM] Enthutt aada shaviye. Bracket thurannittu engotta poye?".to_string());
         } else if clean.contains("reference to overloaded function") {
-            transformed.push("💥 [KILI POYI] Built-in function-inte peril variable create cheyyalle Aliya.".to_string());
+            transformed.push("[KILI POYI] Built-in function-inte peril variable create cheyyalle Ende Istaa.".to_string());
         } else if clean.contains("no matching function for call") {
-            transformed.push("🚫 [MISMATCH] Set aavathilla... types thammil oru charcha nadakkunnilla.".to_string());
+            transformed.push("[MISMATCH] Set aavillada gediye... types thammil oru talk illalo.".to_string());
         } else if clean.trim().starts_with('^') || clean.contains("error:") {
-            transformed.push(format!("   ↳ {}", clean.trim()));
+            transformed.push(format!("Enthuttada gediye   ↳ {}", clean.trim()));
         }
     }
 
     if transformed.is_empty() {
-        "🔥 [AALU MAARI] Compiler aake confuse aayi koodaram ketti.".to_string()
+        "[AALU MAARI] Compiler aake confuse aayi padam aavaraayi.".to_string()
     } else {
         transformed.join("\n")
     }
 }
 
-// ==========================================
-// 🚀 COMPILER ENTRY POINT
-// ==========================================
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
@@ -196,7 +184,7 @@ fn main() {
     };
 
     let source = fs::read_to_string(input_path).unwrap_or_else(|_| {
-        eprintln!("File vaayikkan pattunnilla mwone: {}", input_path);
+        eprintln!("File vaayikkan pattunnilla istaa!: {}", input_path);
         std::process::exit(1);
     });
 
@@ -214,13 +202,13 @@ fn main() {
     if let Some(mut stdin) = child.stdin.take() {
         stdin
             .write_all(cpp_stream.as_bytes())
-            .expect("Stdin-ilot stream cheyyan pattiyilla");
+            .expect("Stdin-ilot stream cheyyan pattiyillada kdaave");
     }
 
     let output = child.wait_with_output().expect("Compiler hang aayi");
 
     if output.status.success() {
-        println!("✨ Sambhavam set aayi! Binary ready: ./{}", binary_name);
+        println!("Sambhavam set aayi kdaave! Binary ready: ./{}", binary_name);
         play_sfx(CHENDA_MELAM);
     } else {
         let stderr_str = String::from_utf8_lossy(&output.stderr);

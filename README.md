@@ -31,7 +31,7 @@ Bespoke Binaural Reinforcement: Baking raw MP3 byte streams straight into the co
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- Languages used: Rust, C++, Gedi C++- [Frameworks used]
+- Languages used: Rust, C++, Gedi C++
 - None
 - logos (high-performance lexer and token scanning), rodio (cross-platform audio playback engine with MP3 decoding)
 - Tools used: Cargo, Clang++
@@ -40,7 +40,8 @@ For Software:
 # Installation
 ```zsh
 git clone https://github.com/your-username/gedic.git
-cd gedic```
+cd gedic
+```
 
 # Run
 [commands]
