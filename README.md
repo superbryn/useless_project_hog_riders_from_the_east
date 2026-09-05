@@ -39,12 +39,25 @@ For Software:
 ### Implementation
 # Installation
 ```zsh
+# Clone the repository
 git clone https://github.com/your-username/gedic.git
 cd gedic
+
+# Build the release binary with embedded audio assets
+cargo build --release
+
+# Install globally to your system PATH
+sudo cp target/release/gedic /usr/local/bin/
 ```
 
 # Run
-[commands]
+```zsh
+# Compile and name your executable output
+gedic sample.gedi -o my_gedi_app
+
+# Run the generated native binary
+./my_gedi_app
+```
 
 ### Project Documentation
 For Software:
