@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 logos = "0.14"
+rodio = { version = "0.19", features = ["mp3"] }
