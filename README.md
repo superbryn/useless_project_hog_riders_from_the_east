@@ -101,7 +101,7 @@ Native Executable (./a.out)*
 
 ### Project Demo
 # Video
-[![Watch Gedi C++ Demo](./assets/thumbnail.png)](https://drive.google.com/file/d/1VFBJL_oJ6qIUB9ZrXp9ICb5X7tUttTSL/view?t=7.863)
+[![Watch Gedi C++ Demo](./assets/thumbnail.png)](https://github.com/superbryn/useless_project_hog_riders_from_the_east/blob/main/assets/gedic-video.mp4)
 
 # Additional Demos
 [Add any extra demo materials/links]
