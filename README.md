@@ -101,8 +101,10 @@ Native Executable (./a.out)*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+<video width="100%" controls>
+  <source src="https://discord.com/channels/@me/1428067931660484782/1545949836505780247" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 # Additional Demos
 [Add any extra demo materials/links]
