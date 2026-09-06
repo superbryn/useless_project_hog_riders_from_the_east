@@ -40,8 +40,8 @@ For Software:
 # Installation
 ```zsh
 # Clone the repository
-git clone https://github.com/your-username/gedic.git
-cd gedic
+git clone https://github.com/superbryn/useless_project_hog_riders_from_the_east.git
+cd useless_project_hog_riders_from_the_east
 
 # Build the release binary with embedded audio assets
 cargo build --release
