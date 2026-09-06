@@ -9,8 +9,8 @@
 
 
 ### Team Members
-- Member 1: Madhav Manoj - SCMS School of Engineering and Technology
-- Member 2: Neeraj Praleep - SCMS School of Engineering and Technology
+- Member 1: Neeraj Praleep - SCMS School of Engineering and Technology
+- Member 2: Madhav Manoj - SCMS School of Engineering and Technology
 
 ### Project Description
 Gedi C++ (gedic) is a lightweight, esoteric C++ transpiler written in Rust that swaps standard syntax with authentic Malayalam and Thrissur slang. It pipes transpiled code directly into Clang via memory without creating messy temporary files, delivers custom Naadan compiler diagnostics on syntax failures, and features baked-in audio that blasts an elephant trumpet on compile errors and chenda melam on a successful build.
