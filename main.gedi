@@ -6,7 +6,7 @@ poornam pradhanam() {
         paray_gedi << peeru << " set aanu!" << theernnu;
     } allegil {
         paray_gedi << "Scene down!" << theernnu;
-    }
+    
 
     inna_pidicho 0;
 }
