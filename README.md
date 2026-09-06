@@ -103,14 +103,6 @@ Native Executable (./a.out)*
 # Video
 [![Watch Gedi C++ Demo](./assets/thumbnail.png)](https://github.com/user-attachments/assets/8640b05c-ea51-41ce-88a7-a679983970fa)
 
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
-
 ---
 Made with ❤️ at TinkerHub Useless Projects 
 
