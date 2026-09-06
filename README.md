@@ -101,7 +101,7 @@ Native Executable (./a.out)*
 
 ### Project Demo
 # Video
-[![Watch Gedi C++ Demo](./assets/thumbnail.png)](https://cdn.discordapp.com/attachments/1428067931660484782/1545949836141011004/gedic-video.mp4?ex=6a9e017b&is=6a9caffb&hm=e120d6adf6181d3473bb3587834d8c9e3bbd268ef7b57929def10eeec2f91399&)
+[![Watch Gedi C++ Demo](./assets/thumbnail.png)](https://drive.google.com/file/d/1VFBJL_oJ6qIUB9ZrXp9ICb5X7tUttTSL/view?t=7.863)
 
 # Additional Demos
 [Add any extra demo materials/links]
